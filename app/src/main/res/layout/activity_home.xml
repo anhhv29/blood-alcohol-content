@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="TÍNH NỒNG ĐỘ CỒN"
+        android:textColor="#E51427"
+        android:textSize="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Giới tính"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvMale"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Nam"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvSex"
+        app:layout_constraintTop_toBottomOf="@+id/tvSex" />
+
+    <TextView
+        android:id="@+id/tvFeMale"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Nữ"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMale"
+        app:layout_constraintStart_toEndOf="@+id/tvMale"
+        app:layout_constraintTop_toTopOf="@+id/tvMale" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Cân nặng"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvWine"
+        app:layout_constraintTop_toTopOf="@+id/tvSex" />
+
+    <EditText
+        android:id="@+id/edtHeight"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvHeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="kg"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtHeight"
+        app:layout_constraintStart_toEndOf="@+id/edtHeight"
+        app:layout_constraintTop_toTopOf="@+id/edtHeight" />
+
+    <TextView
+        android:id="@+id/tvTypeDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Loại đồ uống"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvMale"
+        app:layout_constraintTop_toBottomOf="@+id/tvMale" />
+
+    <TextView
+        android:id="@+id/tvBeer"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Bia"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvTypeDrink"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeDrink" />
+
+    <TextView
+        android:id="@+id/tvBrandy"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Rượu mạnh"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBeer"
+        app:layout_constraintStart_toEndOf="@+id/tvBeer"
+        app:layout_constraintTop_toTopOf="@+id/tvBeer" />
+
+    <TextView
+        android:id="@+id/tvWine"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Rượu vang"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBrandy"
+        app:layout_constraintStart_toEndOf="@+id/tvBrandy"
+        app:layout_constraintTop_toTopOf="@+id/tvBrandy" />
+
+    <TextView
+        android:id="@+id/tvNumberDrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Số lượng đã uống"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintStart_toEndOf="@+id/tvWine"
+        app:layout_constraintTop_toTopOf="@+id/tvTypeDrink" />
+
+    <EditText
+        android:id="@+id/edtNumberDrank"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvNumberDrank"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumberDrank" />
+
+    <TextView
+        android:id="@+id/tvTypeDrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="chén rượu"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/edtNumberDrank"
+        app:layout_constraintStart_toEndOf="@+id/edtNumberDrank"
+        app:layout_constraintTop_toTopOf="@+id/edtNumberDrank" />
+
+    <TextView
+        android:id="@+id/tvInforDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="1 chén rượu có thể tích: 30ml, độ cồn: 40°"
+        android:textColor="#595454"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/tvBeer"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeer" />
+
+    <TextView
+        android:id="@+id/tvVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Phương tiện"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvInforDrink"
+        app:layout_constraintTop_toBottomOf="@+id/tvInforDrink" />
+
+    <TextView
+        android:id="@+id/tvMotobike"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Xe máy"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicle"
+        app:layout_constraintTop_toBottomOf="@+id/tvVehicle" />
+
+    <TextView
+        android:id="@+id/tvCar"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Ô tô"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMotobike"
+        app:layout_constraintStart_toEndOf="@+id/tvMotobike"
+        app:layout_constraintTop_toTopOf="@+id/tvMotobike" />
+
+    <TextView
+        android:id="@+id/tvBike"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:background="@drawable/text_box_default"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Xe thô sơ"
+        android:textColor="#020000"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCar"
+        app:layout_constraintStart_toEndOf="@+id/tvCar"
+        app:layout_constraintTop_toTopOf="@+id/tvCar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:background="@drawable/ic_btn"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:paddingStart="@dimen/_100sdp"
+        android:paddingEnd="@dimen/_100sdp"
+        android:text="Xem kết quả"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBike" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
